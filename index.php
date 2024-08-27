@@ -11,13 +11,21 @@ new QRLogin;
   <meta name="robots" content="follow,index" />
   <meta name="author" content="9r3i" />
   <meta name="uri" content="https://github.com/9r3i" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/9r3i/qrlogin.js/master/qrlogin.png" />
   <link rel="icon" href="https://raw.githubusercontent.com/9r3i/qrlogin.js/master/qrlogin.png" type="image/png" />
   <script id="virtual.js"></script>
 </head><body>
 <span>Connecting...</span>
+<script type="module">
+import QrScanner from "https://9r3i.web.id/files/text/javascript/qr-scanner.min.js";
+window.QrScanner=QrScanner;
+</script>
 <script>
 /* anonymous async function */
 (async function(){
+  if(window.TRUSTED!==undefined){
+    return;
+  }
   /* prepare registered files */
   const REGISTERED_FILES={
     "abl.js": "https://raw.githubusercontent.com/9r3i/abl.js/master/abl.min.js",
@@ -55,7 +63,7 @@ new QRLogin;
   await vapp.load('qrlogin.js');
   /* load qrlogin */
   const app=new QRLogin;
-  app.init();
+  await app.init();
 })();
 </script>
 </body></html>
@@ -86,7 +94,6 @@ class QRLogin{
       return $this->result('error:empty');
     }
     $json=file_get_contents($file);
-    @unlink($file);
     $data=@json_decode($json,true);
     return $this->result($data);
   }
