@@ -53,6 +53,7 @@ this.poke=async function(otp='',attempt=0){
     &&res.hasOwnProperty('apphost')
     ){
     this.appData(res);
+    this.loader();
     return await this.init();
   }else if(attempt<0x63){
     return setTimeout(async ()=>{
@@ -87,8 +88,16 @@ this.loader=function(){
 };
 /* put on body */
 this.put=function(el=''){
-  this.ui.body.innerHTML='';
-  this.ui.body.append(el);
+  if(this.ui){
+    this.ui.body.innerHTML='';
+    this.ui.body.append(el);
+  }else{
+    let body=document.getElementById('qrcode');
+    if(body){
+      body.innerHTML='';
+      body.append(el);
+    }
+  }
   return el;
 };
 /* basic ui */
