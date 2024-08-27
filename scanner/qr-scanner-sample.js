@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en">
+let content=`<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>QR Scanner Demo</title>
@@ -173,3 +173,5 @@
 
 </body>
 </html>
+`;
+document.write(content);
