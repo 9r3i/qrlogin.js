@@ -5,8 +5,8 @@ new QRLogin;
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <title>9r3i\hotel</title>
-  <meta name="keywords" content="9r3i, niner, hotel" />
+  <title>9r3i\QRLogin</title>
+  <meta name="keywords" content="9r3i, niner, qrlogin" />
   <meta name="description" content="the sly eagle doesn't kill at whim" />
   <meta name="robots" content="follow,index" />
   <meta name="author" content="9r3i" />
