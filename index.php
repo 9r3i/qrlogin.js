@@ -11,7 +11,7 @@ new QRLogin;
   <meta name="robots" content="follow,index" />
   <meta name="author" content="9r3i" />
   <meta name="uri" content="https://github.com/9r3i" />
-  <link rel="icon" href="https://raw.githubusercontent.com/9r3i/hotelbandara/master/images/logo.png" type="image/png" />
+  <link rel="icon" href="https://raw.githubusercontent.com/9r3i/qrlogin.js/master/qrlogin.png" type="image/png" />
   <script id="virtual.js"></script>
 </head><body>
 <span>Connecting...</span>
