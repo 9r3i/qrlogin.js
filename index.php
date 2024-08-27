@@ -13,8 +13,6 @@ new QRLogin;
   <meta name="uri" content="https://github.com/9r3i" />
   <link rel="icon" href="https://raw.githubusercontent.com/9r3i/hotelbandara/master/images/logo.png" type="image/png" />
   <script id="virtual.js"></script>
-  <script src="qrcode.min.js"></script>
-  <script src="qrlogin.js"></script>
 </head><body>
 <span>Connecting...</span>
 <script>
@@ -24,6 +22,8 @@ new QRLogin;
   const REGISTERED_FILES={
     "abl.js": "https://raw.githubusercontent.com/9r3i/abl.js/master/abl.min.js",
     "particle.js": "https://raw.githubusercontent.com/VincentGarreau/particles.js/master/particles.min.js",
+    "qrcode.js": "https://raw.githubusercontent.com/9r3i/qrlogin.js/master/qrcode.min.js",
+    "qrlogin.js": "https://raw.githubusercontent.com/9r3i/qrlogin.js/master/qrlogin.js",
   };
   /* virtual host file */
   const VIRTUAL_HOST="https://raw.githubusercontent.com/9r3i/virtual.js/master/virtual.min.js";
@@ -49,6 +49,10 @@ new QRLogin;
   await vapp.load('abl.js');
   /* load particle.js */
   await vapp.load('particle.js');
+  /* load qrcode.js */
+  await vapp.load('qrcode.js');
+  /* load qrlogin.js */
+  await vapp.load('qrlogin.js');
   /* load qrlogin */
   const app=new QRLogin;
   app.init();
