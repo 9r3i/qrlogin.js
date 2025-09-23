@@ -375,8 +375,8 @@ body{
   z-index:3;
   width:350px;
   height:auto;
-  background-color:rgba(50,100,155,0.6);
-  box-shadow:0px 0px 15px #59d;
+  background-color:rgba(221,204,85,0.6);
+  box-shadow:0px 0px 15px #dc5;
   border:0px none;
   border-radius:9px;
   overflow:hidden;
